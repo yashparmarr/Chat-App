@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-app">
+        <div class="contacts-panel">
+            <header class="panel-header">
+                <div class="user-profile">
+                    <div class="avatar-wrapper">
+                        <img src="https://ui-avatars.com/api/?name=Me&background=7E3AF2&color=fff" alt="Profile">
+                        <span class="online-status"></span>
+                    </div>
+                    <h2>Chat App</h2>
+                </div>
+                <div class="panel-actions">
+                    <button class="icon-btn"><i class="fas fa-cog"></i></button>
+                </div>
+            </header>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search conversations...">
+                </div>
+            </div>
+            
+            <div class="contacts-list">
+            </div>
+        </div>
+        
+        <div class="chat-area">
+            <div class="empty-state">
+                <div class="empty-content">
+                    <div class="app-logo">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h2>Chat App</h2>
+                    <p>Select a conversation to start messaging</p>
+                </div>
+            </div>
+            
+            <div class="active-chat" style="display: none;">
+                <header class="chat-header">
+                    <div class="chat-info">
+                        <div class="avatar-wrapper">
+                            <img src="" alt="Contact" id="active-contact-avatar">
+                            <span class="online-status"></span>
+                        </div>
+                        <div class="contact-details">
+                            <h3 id="active-contact-name"></h3>
+                            <p id="active-contact-status"></p>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <button class="icon-btn"><i class="fas fa-phone"></i></button>
+                        <button class="icon-btn"><i class="fas fa-video"></i></button>
+                        <button class="icon-btn"><i class="fas fa-ellipsis-vertical"></i></button>
+                    </div>
+                </header>
+                
+                <div class="messages-container">
+                </div>
+                
+                <div class="message-composer">
+                    <button class="icon-btn"><i class="fas fa-plus-circle"></i></button>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Type your message..." id="message-input">
+                        <button class="emoji-btn"><i class="far fa-smile"></i></button>
+                    </div>
+                    <button class="send-btn" id="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="userData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
