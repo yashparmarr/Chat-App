@@ -61,6 +61,7 @@ cd Chat-App
 Project Structure :
 
 Chat-App/
+
 ├── index.html          # Main HTML file
 
 ├── style.css           # All CSS styles
